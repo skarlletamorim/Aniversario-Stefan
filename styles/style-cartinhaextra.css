@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Merienda:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #222BFD;
+    --cor-hover: #FDF7FF;
+
+    --fonte-primaria: 'Fuzzy Bubbles', sans-serif;
+    --fonte-secundaria: 'Merienda', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 2% 0% 2% 5%;
+    background-color: var(--cor-hover);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222BFD;
+    text-decoration: none;
+}
+
+.cartinha {
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.cartinha__conteudo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.62rem;
+    font-family: var(--fonte-secundaria);
+    gap: 20px;
+}
+
+.cartinha__imagem {
+    width: 30%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-hover);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+
+    .cartinha {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cartinha__conteudo {
+        width: auto;
+    }
+    
+    .cartinha__imagem {
+        width: 80%;
+    }
+
+    .rodape {
+        padding: 3%;
+        font-size: 0.75rem;
+    }
+}
